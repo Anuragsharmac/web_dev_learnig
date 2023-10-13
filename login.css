@@ -1,0 +1,12 @@
+body
+{
+    margin:10%;
+    padding:20%;
+    background:url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.a1{
+    background-color:antiquewhite;
+}

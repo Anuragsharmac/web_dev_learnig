@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    margin: 200px;
+}
+
+button {
+    border:1px solid black;
+    margin: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    background-color: gray;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: cyan;
+    }
+}
+
+@media (max-color: 599px) {
+    body {
+        background-color: green;
+    }
+} 

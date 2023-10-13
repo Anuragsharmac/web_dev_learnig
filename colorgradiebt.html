@@ -1,0 +1,169 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 2px;
+            background-color: white;
+            padding: 15px;
+            
+
+
+        }
+
+        .Abc {
+            padding: 18px;
+            width: 260;
+            margin: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 4px;
+            background-color: rgb(43, 43, 39);
+            border-color: black;
+            color: #f2f2f2;
+            border-width: 1px;
+            font-size: 24px;
+        }
+
+        .btn {
+            font-size: 24px;
+            border-radius: 3px;
+            font-family: sans-serif;
+
+            width: 58;
+            text-align: center;
+            background: black;
+            color: #f2f2f2;
+            outline: none;
+
+            z-index: 9;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            cursor: pointer;
+
+
+        }
+
+
+
+        .clr {
+            width: 190;
+            font-size: 24px;
+            border-radius: 3px;
+            cursor: pointer;
+            color: #f2f2f2;
+            background-color: #000000;
+        }
+
+        .btn:hover {
+            background: rgb(48, 46, 46);
+
+        }
+
+        .clr:hover {
+
+            animation: rotate 1.5s linear infinite;
+            background: rgb(35, 34, 34);
+        }
+
+        .N {
+            font-family: serif;
+            text-shadow: 2px 2px 19px rgb(111, 111, 231);
+
+            color: #010101;
+            width: 300px;
+            font-size: 34px;
+            border-radius: 5px;
+            margin: 14px;
+            border-width: 4px;
+            border-color: white;
+            margin-left: 39%;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 1px 1px 9px gray;
+            font-family: arial;
+        }
+        .N:hover{
+            box-shadow: 1px 1px 9px rgb(78, 77, 77);
+        }
+
+        .A {
+            background-color: black;
+            width: 296px;
+            height: 440px;
+            border-radius: 10px;
+            margin: 0px;
+            padding: 3px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
+            
+        margin-left: 40%;
+
+        }
+
+        .A:hover {
+            animation: rotate 1.5s linear infinite;
+            background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+        }
+
+        @keyframes rotate {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+
+<body>
+
+    <h1 class="N">CALCUTATOR</h1>
+
+    <div class="A">
+        <form>
+
+
+            <input class="Abc" type="text" name="show" placeholder="CALCULATOR">
+
+
+
+            <br>
+
+            <input class="btn" type="button" value="1" onclick="show.value+='1'">
+            <input class="btn" type="button" value="2" onclick="show.value+='2'">
+            <input class="btn" type="button" value="3" onclick="show.value+='3'">
+            <input class="btn" type="button" value="+" onclick="show.value+='+'">
+            <br>
+            <input class="btn" type="button" value="4" onclick="show.value+='4'">
+            <input class="btn" type="button" value="5" onclick="show.value+='5'">
+            <input class="btn" type="button" value="6" onclick="show.value+='6'">
+            <input class="btn" type="button" value="-" onclick="show.value+='-'">
+            <br>
+            <input class="btn" type="button" value="7" onclick="show.value+='7'">
+            <input class="btn" type="button" value="8" onclick="show.value+='8'">
+            <input class="btn" type="button" value="9" onclick="show.value+='9'">
+            <input class="btn" type="button" value="/" onclick="show.value+='/'">
+            <br>
+            <input class="btn" type="button" value="0" onclick="show.value+='0'">
+            <input class="btn" type="button" value="." onclick="show.value+='.'">
+            <input class="btn" type="button" value="00" onclick="show.value+='00'">
+            <input class="btn" type="button" value="*" onclick="show.value+='*'">
+            <br>
+
+            <input class="btn" type="button" value="=" onclick="show.value=eval(show.value)">
+            <input class="clr" type="button" value="clr" onclick="show.value=''">
+    </div>
+    </div>
+
+
+    </form>
+    </div>
+</body>
+</body>
+</head>
+
+</html>

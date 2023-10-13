@@ -1,0 +1,31 @@
+*{
+    margin-left: 13%;
+  
+}
+#count{
+    margin-left:43%;
+    padding-bottom:7%;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#people{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#btn{
+    border:none;
+    margin-left:19%;
+    padding:9px;
+    width:190px;
+    font-size: larger;
+    background-color: rgb(34, 34, 239);
+    color:aliceblue;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.grid{
+    padding:5%;
+    margin-right:45%;
+    border-radius: 8px;
+    background-image: url("nature.jpg");
+}

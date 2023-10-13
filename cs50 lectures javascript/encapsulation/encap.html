@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Bank
+        {
+            constructor()
+            {
+                var bal;
+            }
+            setBal(bal)
+            {
+                this.bal=bal;
+
+            }
+            getBal()
+            {
+                return this.bal;
+            }
+            debit(deb)
+            {
+                this.deb = deb;
+
+            }
+            credit(cred)
+            {
+                this.cred = cred;
+
+            }
+        }
+        var ob =new Bank();
+        ob.setBal(10000);
+        ob.debit(4000);
+        ob.credit(6000);
+        document.write(ob.getBal()+"</br>");
+        document.write(ob.debit()+"</br>");
+        document.write(ob.credit()+"</br>");
+    </script>
+</body>
+</html>

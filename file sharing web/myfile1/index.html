@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p class="demo3"></p>
+  
+
+    <script>
+const d = new Date("2023")
+document.getElementById("demo").innerHTML = d.getFullYear();
+const d1 = new Date();
+document.getElementById("demo1").innerHTML = d1.getMonth() + 1;
+
+const d2 = new Date("2021-03-25");document.getElementById("demo2").innerHTML = d2.getHours();
+
+const d3 = new Date("2021-03-25");
+document.getElementById("demo3").innerHTML = d3.getMinutes();
+
+        
+    class cls {
+    constructor(car1,car2,flat1, flat2) {
+    this.car1 = car1;
+    this.car2=car2;
+    this.flat1 = flat1;
+    this.flat2=flat2;
+  }
+  properties(){
+        document.write(this.car1+" "+this.car2+" "+this.flat1+" "+this.flat2);
+       
+   }
+
+}
+class study extends cls{
+    constructor(w,x,y,z)
+    {
+        super(w,x,y,z);
+        
+    }
+   
+}
+
+var obj = new study("one","two","three","four");
+obj.properties();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: blueviolet;
+    text-align: center;
+
+}
+.wrapped
+{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.circle
+{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: palevioletred;
+    color: aliceblue;
+    cursor: pointer;
+    transition: background-color 1s,transform 1s 1s ease-out;
+
+}
+.circle:hover{
+    background-color: brown;
+    transform: rotate(360deg);
+}

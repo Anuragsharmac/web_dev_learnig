@@ -1,0 +1,122 @@
+<html>
+<head>
+  <title>My Car Driving Game</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <script>
+    // Get canvas and context
+    var canvas = document.getElementById('game');
+    var ctx = canvas.getContext('2d');
+
+    // Set canvas size to window size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Set default values
+    var carX = canvas.width / 2;
+    var carY = canvas.height - 50;
+    var carWidth = 50;
+    var carHeight = 30;
+    var speed = 5;
+
+    // Draw car function
+    function drawCar() {
+      ctx.fillStyle = 'red';
+      ctx.fillRect(carX, carY, carWidth, carHeight);
+    }
+
+    // Update game function
+    function updateGame() {
+      // Clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw car
+      drawCar();
+
+      // Update car position
+      carX += speed;
+
+      // Check for edge of screen
+      if (carX + carWidth > canvas.width || carX < 0) {
+        speed = -speed;
+      }
+    }
+
+    // Run game loop
+    setInterval(updateGame, 1000 / 60);
+  </script>
+</body>
+</html>
+<html>
+<head>
+  <title>My Car Driving Game</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <script>
+    // Get canvas and context
+    var canvas = document.getElementById('game');
+    var ctx = canvas.getContext('2d');
+
+    // Set canvas size to window size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Set default values
+    var carX = canvas.width / 2;
+    var carY = canvas.height - 50;
+    var carWidth = 50;
+    var carHeight = 30;
+    var speed = 5;
+
+    // Draw car function
+    function drawCar() {
+      ctx.fillStyle = 'red';
+      ctx.fillRect(carX, carY, carWidth, carHeight);
+    }
+
+    // Update game function
+    function updateGame() {
+      // Clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw car
+      drawCar();
+
+      // Update car position
+      carX += speed;
+
+      // Check for edge of screen
+      if (carX + carWidth > canvas.width || carX < 0) {
+        speed = -speed;
+      }
+    }
+
+    // Run game loop
+    setInterval(updateGame, 1000 / 60);
+  </script>
+</body>
+</html>

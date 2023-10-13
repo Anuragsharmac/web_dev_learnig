@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #name{
+            font-size: 20px;
+            font-family: cursive;
+        }
+        #btn1{
+            background-color: white;
+            border-width: 0px;
+            border-radius: 3px;
+            padding:7px;
+            width:80px;
+            box-shadow: 1px 1px 5px gray;
+            color:blueviolet;
+            
+        }
+        #btn2{
+            background-color: white;
+            border-width: 0px;
+            border-radius: 3px;
+            padding:7px;
+            width:80px;
+            box-shadow: 1px 1px 5px gray;
+            color:rgb(199, 234, 0);
+        }
+        #btn3{
+            background-color: white;
+            border-width: 0px;
+            border-radius: 3px;
+            padding:7px;
+            width:80px;
+            box-shadow: 1px 1px 5px gray;
+            color:red;
+        }
+        #btn4{
+            background-color: white;
+            border-width: 0px;
+            border-radius: 3px;
+            padding:7px;
+            width:80px;
+            box-shadow: 1px 1px 5px gray;
+            color:blue;
+        }
+        #btn5{
+            background-color: white;
+            border-width: 0px;
+            border-radius: 3px;
+            padding:7px;
+            width:80px;
+            box-shadow: 1px 1px 5px gray;
+            color:orange;
+           
+        }
+        #btn6{
+            background-color: white;
+            border-width: 0;
+            border-radius: 3px;
+            padding:7px;
+            width:80px;
+            /* border-color: black; */
+            box-shadow: 1px 1px 5px gray;
+            color:green;
+            
+
+        }
+        #btn7{
+            background-color: white;
+            border-width: 0px;
+            border-radius: 3px;
+            padding:7px;
+            width:80px;
+            box-shadow: 1px 1px 5px gray;
+            color:brown;
+            
+        }
+        #btn1:hover{
+            background-color: rgb(73, 26, 214);
+            color:black;
+        }
+        #btn2:hover{
+            background-color: rgb(199, 234, 0);
+            color:black;
+        }
+        #btn3:hover{
+            background-color: red;
+            color:black;
+        }
+        #btn4:hover{
+            background-color: blue;
+            color:black;
+        }
+        #btn5:hover{
+            background-color: orange;
+            color:black;
+        }
+        #btn6:hover{
+            background-color: green;
+            color:black;
+        }
+        #btn7:hover{
+            background-color:brown;
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="name">
+    <h1>Anurag Gautam</h1>
+    
+    </div>
+    <button id="btn1">voilet</button>
+    <button id="btn2">yellie</button>
+    <button id="btn3">red</button>
+    <button id="btn4">blue</button>
+    <button id="btn5">orange</button>
+    <button id="btn6">green</button>
+    <button id="btn7">brown</button>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('#btn1').onclick = function(){
+            document.querySelector('#name').style.color = ' rgb(73, 26, 214)'
+        }
+        document.querySelector('#btn2').onclick = function(){
+            document.querySelector('#name').style.color = 'rgb(199, 234, 0)'
+
+            }
+            document.querySelector('#btn3').onclick = function(){
+            document.querySelector('#name').style.color = 'red'
+
+            }
+            document.querySelector('#btn4').onclick = function(){
+            document.querySelector('#name').style.color = 'blue'
+
+            
+            }
+            document.querySelector('#btn5').onclick = function(){
+            document.querySelector('#name').style.color = 'orange'
+
+            }
+            document.querySelector('#btn6').onclick = function(){
+            document.querySelector('#name').style.color = 'green'
+
+            }
+            document.querySelector('#btn7').onclick = function(){
+            document.querySelector('#name').style.color = 'brown'
+
+            }
+        
+    });
+</script>
+</html>
